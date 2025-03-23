@@ -1,0 +1,24 @@
+@echo off
+echo Moving unnecessary files to backup directory...
+
+if not exist backup mkdir backup
+
+move checkpoint_load.py backup\ 2>nul
+move data_bert_vgg_loader.py backup\ 2>nul
+move data_loader.py backup\ 2>nul
+move data_preprocess.py backup\ 2>nul
+move data_reader.py backup\ 2>nul
+move data_text_loader.py backup\ 2>nul
+move deploy.py backup\ 2>nul
+move gpu_utils.py backup\ 2>nul
+move layers.py backup\ 2>nul
+move model_pytorch.py backup\ 2>nul
+move model_utils.py backup\ 2>nul
+move model_utils_pytorch.py backup\ 2>nul
+move test.ipynb backup\ 2>nul
+move "testacc = 62.49.png" backup\ 2>nul
+move User_Interface.png backup\ 2>nul
+move model.png backup\ 2>nul
+move host.png backup\ 2>nul
+
+echo Clean-up complete! 
